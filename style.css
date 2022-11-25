@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@900&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.eq-IMG {
+  border-radius: 1.5%;
+}
+.avatar {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid white;
+  max-width: 15%;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  /* border: solid 2px red; */
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4em;
+  
+  
+  
+  
+}
+.container {
+  margin-bottom: 1.5rem;
+}
+.wrapper {
+  margin:0 auto ;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  width: 100%;
+  max-width: 375px;
+  /* border: solid 2px yellow; */
+ 
+}
+h1 {
+  color: white;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  
+}
+h1:hover{
+  color: cyan;
+  cursor: pointer;
+}
+img:hover{
+  cursor: pointer;
+  opacity: .8;
+  
+}
+.icon::after{
+  content: url(images/icon-view.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  opacity: 0;
+  
+}
+.overlay:hover + .icon::after{
+  opacity: 1;
+} 
+.overlay{
+  opacity: 0;
+  transition: .5s ;
+  background-color: cyan;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 2%;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.125rem;
+}
+.jules {
+  color: white;
+  font-weight: 900;
+
+}
+.jules:hover{
+  cursor: pointer;
+  color:cyan;
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+    
+}
+.cyan-color{ color: hsl(178, 100%, 50%); }
+.eth::before{
+    content: url(images/icon-ethereum.svg);
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    
+   
+}
+.eth-icon::before{
+    content: url(images/icon-clock.svg);
+    vertical-align: middle;
+
+}
+.section1 {
+  position: relative;
+}
+.section1:hover .overlay{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.section2 {
+}
+.section3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.section4 {
+  padding-top: 1rem;
+  border-top: 2px solid hsl(215, 32%, 27%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
