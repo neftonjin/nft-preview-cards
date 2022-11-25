@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@900&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.eq-IMG {
+  border-radius: 1.5%;
+}
+.avatar {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid white;
+  max-width: 15%;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  
+  height: 100%;
+  
+  
+}
+.container {
+  margin-bottom: 1.5rem;
+}
+.wrapper {
+  margin: auto;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  width: 100%;
+  
+ 
+}
+h1 {
+  color: white;
+  margin-bottom: 1em;
+}
+p {
+  color: hsl(215, 51%, 70%);
+}
+.jules {
+  color: white;
+  font-weight: 900;
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+    
+}
+.eth::before{
+    content: url(images/icon-ethereum.svg);
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    
+   
+}
+.eth-icon::before{
+    content: url(images/icon-clock.svg);
+    vertical-align: middle;
+
+}
+.section1 {
+}
+.section2 {
+}
+.section3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.section4 {
+  padding-top: 1rem;
+  border-top: 2px solid hsl(215, 32%, 27%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
