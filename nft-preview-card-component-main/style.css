@@ -73,6 +73,8 @@ img:hover{
 .overlay:hover + .icon::after{
   opacity: 1;
 } 
+
+.icon:hover::after{opacity: 1;}
 .overlay{
   opacity: 0;
   transition: .5s ;
